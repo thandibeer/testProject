@@ -1,0 +1,162 @@
+html,body{
+    font-family: "Helvetica", serif;
+    text-align:center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,nav{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color:inherit;
+}
+header, div.introduction,footer{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:gray;
+  padding: 35px 100px 0;
+}
+header h1{
+  text-transform:uppercase;
+}
+header nav{
+  display:flex;
+}
+
+header nav li{
+  margin-right: 15px;
+}
+header nav li:first-child{
+  margin-left: 0;
+}
+header nav li:last-child{
+  margin-right: 0;
+}
+div.introduction p{
+  margin: 0px 20px 10px 0px ;
+  /* text-align: left; */
+}
+footer a.abc{
+  display: none;
+}
+#content h2{
+  padding-top:20px;
+}
+@media only screen and (max-width:763px){
+  header, div.introduction{
+    flex-direction: column;
+  }
+  header nav{
+   display: block;
+  margin-top:5px;
+  }
+  header nav li{
+      text-align: center;
+      display: block;
+      width : 100%;
+      border: 10px solid white;
+  }
+  .introduction img{
+    order: 1;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+  .introduction p{
+    order: 2;
+    margin-top: 10px;
+    margin-bottom:10px;
+    text-align: center;
+  }
+  footer a.abc{
+    display: flex;
+  }
+  footer li.items{
+    display: none;
+  }
+}
+
+hr{
+  width:90%;
+  color: rgb(133, 133, 133);
+  text-align: center;
+  margin-left: 5%;
+  margin-right:5%;
+}
+
+#portfolio{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-content: center;
+}
+
+.cards{
+  display:flex;
+  flex-direction:column;
+  flex: 1 1 400px;
+  width:100%;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+div.cards > *{
+  position: relative;
+  max-height: 365px;
+  max-width: 365px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+section#contact > *{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer nav{
+  display:flex;
+}
+footer nav li{
+  margin-right: 15px;
+}
+footer nav li:first-child{
+  margin-left: 0;
+}
+footer nav li:last-child{
+  margin-right: 0;
+}
+
+@media only screen and (min-width:764px) {
+  footer nav{
+    display:flex;
+  }
+  header{
+    flex-direction: column;
+  }
+  header > *{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+  @media only screen and (min-width:1025px) {
+    header{
+      flex-direction:row;
+    }
+
+  }
+  p.intro{
+    font-size: 20px;  
+    margin-bottom: 50px;
+  }
+
